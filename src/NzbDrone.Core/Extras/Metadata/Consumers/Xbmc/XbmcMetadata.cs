@@ -148,7 +148,7 @@ namespace NzbDrone.Core.Extras.Metadata.Consumers.Xbmc
 
                     var details = new XElement("movie");
 
-                    details.Add(new XElement("title", movieTranslation?.Title ?? movie.Title));
+                    details.Add(new XElement("title", movie.OriginalTitle));
 
                     details.Add(new XElement("originaltitle", movie.OriginalTitle));
 
